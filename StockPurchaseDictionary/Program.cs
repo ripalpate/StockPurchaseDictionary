@@ -51,9 +51,9 @@ namespace StockPurchaseDictionary
                 }
             }
 
-            foreach (var stock in aggregatedPurchase)
+            foreach (var (stockName, stockValuation) in aggregatedPurchase)
             {
-                Console.WriteLine($"{stock.Key}: {stock.Value}");
+                Console.WriteLine($"{stockName}: {stockValuation}");
             }
             Console.ReadLine();
         }
